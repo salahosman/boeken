@@ -131,4 +131,8 @@ class Boek
 
         return $this;
     }
+    public function __toString()
+    {
+        return $this->id."-". $this->getTitle();
+    }
 }
